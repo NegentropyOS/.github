@@ -1,10 +1,10 @@
-﻿<a href="https://discord.gg/g8nqB3NtXt"><img align="right" src="https://img.shields.io/badge/NEGENTROPY-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="NEGENTROPY on Discord"></a>
+<a href="https://discord.gg/g8nqB3NtXt"><img align="right" src="https://img.shields.io/badge/NEGENTROPY-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="NEGENTROPY on Discord"></a>
 <a href="https://opensource.org/licenses/Apache-2.0"><img align="right" src="https://img.shields.io/badge/Apache_2.0-181717?style=for-the-badge&logoColor=white" alt="Apache 2.0"></a>
-<div align="left">English | <a href="./README_ES.md">Español</a></div>
+<div align="left">English | <a href="./README_ES.md">Espa�ol</a></div>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="org-NEGENTROPY.gif">
-  <img src="org-NEGENTROPY-light.gif" alt="NEGENTROPY wordmark animating into place" width="960">
+  <source media="(prefers-color-scheme: dark)" srcset="org-negentropy.gif">
+  <img src="org-negentropy-light.gif" alt="NEGENTROPY wordmark animating into place" width="960">
 </picture>
 
 <p align="center"><strong>Order out of chaos for the age of AI agents.</strong></p>
@@ -25,7 +25,7 @@ Our engineering thesis is direct: **infrastructure must survive operational real
 
 ## Active Substrate: VantaDB
 
-Our core active production substrate is **VantaDB** — an embedded, persistent memory and hybrid vector retrieval engine built in **Rust**.
+Our core active production substrate is **VantaDB** � an embedded, persistent memory and hybrid vector retrieval engine built in **Rust**.
 
 | Property | Details |
 |---|---|
@@ -57,24 +57,24 @@ We maintain a streamlined, zero-bloat repository layout:
 Rather than dispersing into empty repository stubs, our future capabilities are managed as rigorous specifications within [`NegentropyOS/NEGENTROPY`](https://github.com/NegentropyOS/NEGENTROPY):
 
 ```
-┌─────────────────────────────────────────────────────────────┐
-│                      AGENT RUNTIME                          │
-└──────────────────────────────┬──────────────────────────────┘
-                               ▼
-┌─────────────────────────────────────────────────────────────┐
-│  Phase 3: Verification & Metacognition (RFC Meta)          │
-│  - Execution attestation, audit trails & hallucination checks│
-└──────────────────────────────┬──────────────────────────────┘
-                               ▼
-┌─────────────────────────────────────────────────────────────┐
-│  Phase 2: Context & Episodic Grounding (RFC Cardinal)        │
-│  - Bitemporal state, token budgeting & working-memory graphs│
-└──────────────────────────────┬──────────────────────────────┘
-                               ▼
-┌─────────────────────────────────────────────────────────────┐
-│  Phase 1: Persistent Memory Substrate (VantaDB - Active)    │
-│  - Embedded Rust core, HNSW + BM25, ACID local persistence  │
-└─────────────────────────────────────────────────────────────┘
++-------------------------------------------------------------+
+�                      AGENT RUNTIME                          �
++-------------------------------------------------------------+
+                               ?
++-------------------------------------------------------------+
+�  Phase 3: Verification & Metacognition (RFC Meta)          �
+�  - Execution attestation, audit trails & hallucination checks�
++-------------------------------------------------------------+
+                               ?
++-------------------------------------------------------------+
+�  Phase 2: Context & Episodic Grounding (RFC Cardinal)        �
+�  - Bitemporal state, token budgeting & working-memory graphs�
++-------------------------------------------------------------+
+                               ?
++-------------------------------------------------------------+
+�  Phase 1: Persistent Memory Substrate (VantaDB - Active)    �
+�  - Embedded Rust core, HNSW + BM25, ACID local persistence  �
++-------------------------------------------------------------+
 ```
 
 1. **Substrate (Active):** High-throughput, low-footprint persistent memory via **VantaDB**.
@@ -90,16 +90,16 @@ Rather than dispersing into empty repository stubs, our future capabilities are 
 3. **Deterministic State over Probabilistic Guarantees:** Isolate statistical model inference from strict data schemas and transactional storage.
 4. **Radical Transparency:** Clear metrics, reproducible benchmarks, and documented failure modes.
 
-📖 **Full Manifesto**: [MANIFESTO.md](https://github.com/NegentropyOS/.github/blob/main/MANIFESTO.md)
+?? **Full Manifesto**: [MANIFESTO.md](https://github.com/NegentropyOS/.github/blob/main/MANIFESTO.md)
 
 ---
 
 ## Community & Contributing
 
-- **🐛 Issue Tracking**: Submit bugs and benchmarks in relevant repositories.
-- **💬 Community**: Join our discussions on [Discord](https://discord.gg/g8nqB3NtXt).
-- **📧 Contact**: [NegentropyOS.ia@gmail.com](mailto:NegentropyOS.ia@gmail.com)
-- **📖 Contribution Guide**: See [CONTRIBUTING.md](https://github.com/NegentropyOS/.github/blob/main/CONTRIBUTING.md)
+- **?? Issue Tracking**: Submit bugs and benchmarks in relevant repositories.
+- **?? Community**: Join our discussions on [Discord](https://discord.gg/g8nqB3NtXt).
+- **?? Contact**: [NegentropyOS.ia@gmail.com](mailto:NegentropyOS.ia@gmail.com)
+- **?? Contribution Guide**: See [CONTRIBUTING.md](https://github.com/NegentropyOS/.github/blob/main/CONTRIBUTING.md)
 
 ---
 
@@ -107,4 +107,5 @@ Rather than dispersing into empty repository stubs, our future capabilities are 
 
 Code is distributed under the [Apache 2.0 License](https://github.com/NegentropyOS/.github/blob/main/LICENSE).
 
-**NegentropyOS** — Order out of chaos.
+**NegentropyOS** � Order out of chaos.
+
