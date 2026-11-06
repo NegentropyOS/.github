@@ -1,6 +1,6 @@
-[English](./ROADMAP.md) | Español
+﻿[English](./ROADMAP.md) | Español
 
-# Roadmap de SyntropyOS
+# Roadmap de NegentropyOS
 
 > **Estado actual**: Solo **VantaDB** (Memoria) está en producción. Los nueve holones
 > tienen diseño documentado y criterio de activación, pero **ninguno está construido**.
@@ -8,8 +8,7 @@
 > No hay fechas de lanzamiento. El orden lo determina la demanda diagnosticada, no un
 > calendario.
 
-**Holones (monorepo)**: [`syntropy`](https://github.com/SyntropyOS/syntropy) — los nueve
-holones como directorios.
+**Especificaciones y RFCs**: [`NEGENTROPY`](https://github.com/NegentropyOS/NEGENTROPY) — modelo de referencia arquitectónico y especificaciones.
 
 ---
 
@@ -148,8 +147,8 @@ empresas.** El código sin diagnóstico es exactamente el 88% que muere.
 
 | Fecha | Qué pasó |
 |---|---|
-| 08-09-2026 | Nueve repos `syntropy-<holon>`, uno por holón |
-| 28-09-2026 | Se integran en el monorepo `syntropy` con `git subtree`. Los nueve quedan **archivados** con su historial preservado: 27 commits originales |
+| 08-09-2026 | Nueve repos `NEGENTROPY-<holon>`, uno por holón |
+| 28-09-2026 | Se integran en el monorepo `NEGENTROPY` con `git subtree`. Los nueve quedan **archivados** con su historial preservado: 27 commits originales |
 | 29-09-2026 | La organización se reconstruye. Los nueve archivados se **eliminan** —su historial sigue dentro del monorepo— y se recrean los tres repos activos. La barra lateral de la organización pasó de once repos, nueve de ellos stubs, a dos |
 
 Verificación: los 27 commits originales de los nueve repos siguen siendo alcanzables
@@ -174,4 +173,4 @@ explican **por qué, con qué evidencia y con qué herramientas**.
 
 ---
 
-**SyntropyOS** — Orden desde el caos.
+**NegentropyOS** — Orden desde el caos.

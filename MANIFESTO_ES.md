@@ -1,6 +1,6 @@
-[English](./MANIFESTO.md) | Español
+﻿[English](./MANIFESTO.md) | Español
 
-# El Manifiesto Syntropy
+# El Manifiesto NEGENTROPY
 
 > "Orden desde el caos para la era de los agentes de IA."
 
@@ -95,12 +95,12 @@ Si construyes con LLMs y necesitas orden sobre la inteligencia bruta:
 - **Propón**: Sugiere lo que falta.
 - **Comercializa**: Licencia para uso enterprise.
 
-**Contacto**: [syntropyos.ia@gmail.com](mailto:syntropyos.ia@gmail.com) | [Discord](https://discord.gg/g8nqB3NtXt)
+**Contacto**: [NegentropyOS.ia@gmail.com](mailto:NegentropyOS.ia@gmail.com) | [Discord](https://discord.gg/g8nqB3NtXt)
 
 Construyamos infraestructura para la era de los agentes.
 
 ---
 
-**SyntropyOS** — Orden desde el caos.
+**NegentropyOS** — Orden desde el caos.
 
 

@@ -1,119 +1,110 @@
-<a href="https://discord.gg/g8nqB3NtXt"><img align="right" src="https://img.shields.io/badge/Syntropy-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="SYNTROPY on Discord"></a>
+﻿<a href="https://discord.gg/g8nqB3NtXt"><img align="right" src="https://img.shields.io/badge/NEGENTROPY-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="NEGENTROPY on Discord"></a>
 <a href="https://opensource.org/licenses/Apache-2.0"><img align="right" src="https://img.shields.io/badge/Apache_2.0-181717?style=for-the-badge&logoColor=white" alt="Apache 2.0"></a>
 <div align="left">English | <a href="./README_ES.md">Español</a></div>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="org-syntropy.gif">
-  <img src="org-syntropy-light.gif" alt="Syntropy wordmark animating into place" width="960">
+  <source media="(prefers-color-scheme: dark)" srcset="org-NEGENTROPY.gif">
+  <img src="org-NEGENTROPY-light.gif" alt="NEGENTROPY wordmark animating into place" width="960">
 </picture>
 
 <p align="center"><strong>Order out of chaos for the age of AI agents.</strong></p>
 
-<p align="center"><em>Infrastructure that turns operational chaos into systems you can trust.</em></p>
+<p align="center"><em>Deterministic infrastructure and persistent memory for autonomous systems you can trust.</em></p>
 
 ---
 
-## What is SyntropyOS?
+## What is NegentropyOS?
 
-SyntropyOS builds **infrastructure for AI agents**.
+NegentropyOS builds **verifiable, deterministic infrastructure for AI agents**.
 
-Large language models have raw intelligence but no structure. SyntropyOS creates the organization layers that turn that intelligence into coherent, predictable, useful systems.
+Large language models provide raw probabilistic intelligence, but operational enterprise environments require predictable state, reproducible memory, and strict sovereignty. NegentropyOS provides the architectural layer that turns non-deterministic inference into reliable, auditable execution.
 
-We intend to be POSIX for the age of AI agents: we don't make applications, we make the foundations others build applications on. Nothing here is built yet except the substrate, and we would rather say that than imply otherwise.
-
-The problem is not artificial intelligence. It is that no system survives operational reality: the power cuts, the person who configured it leaves, the source document is a PDF from 2019, and nobody knows where the data came from. So the test is not *what the system knows* but **whether you can trust it**. We build **verifiable, sovereign** infrastructure — not merely capable.
+Our engineering thesis is direct: **infrastructure must survive operational reality**. We separate statistical model output from deterministic, ACID-compliant storage and verifiable execution substrates.
 
 ---
 
-## Where things live
+## Active Substrate: VantaDB
 
-| Repository | Visibility | What it holds |
+Our core active production substrate is **VantaDB** — an embedded, persistent memory and hybrid vector retrieval engine built in **Rust**.
+
+| Property | Details |
+|---|---|
+| **Repository** | [`ness-e/Vantadb`](https://github.com/ness-e/Vantadb) |
+| **Current Release** | `v0.7.0` (Production library on PyPI & crates.io) |
+| **Engine Architecture** | Embedded, local-first, zero-copy, SIMD-accelerated |
+| **Retrieval Mechanics** | Dense Vector (HNSW) + Lexical Full-Text (BM25) with Reciprocal Rank Fusion (RRF) |
+| **Durability & Guarantees** | ACID persistence, WAL (Write-Ahead Logging), MVCC snapshot isolation |
+| **Ecosystem Connectors** | Python bindings (`vantadb-py`), LangChain (`vantadb-langchain`), Mem0 (`vantadb-mem0`) |
+
+VantaDB provides autonomous agents with low-latency episodic and semantic memory without the operational overhead or latency of external database clusters.
+
+---
+
+## Repositories & Architecture
+
+We maintain a streamlined, zero-bloat repository layout:
+
+| Repository | Scope | Description |
 |---|---|---|
-| [`syntropy`](https://github.com/SyntropyOS/syntropy) | public | **The nine holons**, one directory each. The substrate |
-| [`ness-e/Vantadb`](https://github.com/ness-e/Vantadb) | public | The memory substrate. Released library, v0.7.0 in production |
-| [`.github`](https://github.com/SyntropyOS/.github) | public | [Manifesto](https://github.com/SyntropyOS/.github/blob/main/MANIFESTO.md) · [Roadmap](https://github.com/SyntropyOS/.github/blob/main/ROADMAP.md) · [Contributing](https://github.com/SyntropyOS/.github/blob/main/CONTRIBUTING.md) · Governance |
-| `strategy` | **private** | Business definition, market evidence, pricing, competitive analysis |
-
-Three active repositories. One of them is private, and that is deliberate: mixing *what we
-believe* with *what we know about the market* degrades both.
+| [`VantaDB`](https://github.com/ness-e/Vantadb) | **Core Substrate** | The embedded memory and hybrid retrieval engine (Rust). |
+| [`NEGENTROPY`](https://github.com/NegentropyOS/NEGENTROPY) | **Specifications & RFCs** | Architectural blueprints, research roadmap, and agent runtime specifications. |
+| [`.github`](https://github.com/NegentropyOS/.github) | **Organization & Governance** | Profile manifesto, development roadmap, and contribution standards. |
 
 ---
 
-## Holons
+## Research & Architecture Roadmap
 
-Each capability is a **holon**: autonomous yet connected — a whole in its own scope and
-part of the Syntropy ecosystem at the same time.
-
-Each holon exists because it resolves a specific **chaos** that gets diagnosed in a real
-organization. A holon with no associated chaos does not get built.
-
-| Holon | Function | The chaos it resolves | Status |
-|-------|----------|----------------------|--------|
-| **VantaDB** | Memory | Substrate for all: ACID persistence and hybrid retrieval, local and sovereign | [v0.7.0](https://github.com/ness-e/Vantadb) ✅ |
-| [**Cardinal**](https://github.com/SyntropyOS/syntropy/tree/main/holons/cardinal) | Orientation | **Context**: what we know, when we learned it, and from whom | In build · 1st |
-| [**Iris**](https://github.com/SyntropyOS/syntropy/tree/main/holons/iris) | Vision | **Perception**: what is an image or paper nobody can query | In build · 2nd |
-| [**Meta**](https://github.com/SyntropyOS/syntropy/tree/main/holons/meta) | Metacognition | **Trust**: evidence that the AI told the truth | In build · 3rd |
-| [**Execute**](https://github.com/SyntropyOS/syntropy/tree/main/holons/execute) | Execution | **Execution**: the automation breaks and nobody repairs it | Defined |
-| [**Sage**](https://github.com/SyntropyOS/syntropy/tree/main/holons/sage) | Adaptation | **Adaptation**: neither the system nor the people adapt | Defined |
-| [**Plan**](https://github.com/SyntropyOS/syntropy/tree/main/holons/plan) | Planning | **Decomposition**: nobody breaks the work down | Defined |
-| [**Orchestra**](https://github.com/SyntropyOS/syntropy/tree/main/holons/orchestra) | Coordination | **Runtime**: without it, the holons do not know how to cooperate | Defined · once 2+ exist |
-| [**Reverb**](https://github.com/SyntropyOS/syntropy/tree/main/holons/reverb) · [**Reason**](https://github.com/SyntropyOS/syntropy/tree/main/holons/reason) | Audio · Reasoning | Out of initial scope | Deferred |
-
-**Defined** means the design and activation criteria are documented; it does not mean it
-ships. Only the substrate (VantaDB) is in production today.
-
-**Cardinal** is first because the others depend on it: without verifiable context there
-is nothing to perceive and nothing to verify. **Meta** moved from ninth to third because
-it is the differentiator — the competition sells capability, this sells verifiability.
-
----
-
-## Build order
+Rather than dispersing into empty repository stubs, our future capabilities are managed as rigorous specifications within [`NegentropyOS/NEGENTROPY`](https://github.com/NegentropyOS/NEGENTROPY):
 
 ```
-VantaDB  (substrate, in production)
-   └─► 1. Cardinal   context       ┐
-   └─► 2. Iris       perception    ├─ without Cardinal there is nothing to verify
-   └─► 3. Meta       trust         ┘
-   └─► 4. Execute    execution     requires prior trust
-   └─► 5. Sage       adaptation   requires trustworthy context and Iris
-   └─► 6. Plan       decomposition requires something to verify the steps against
-          Orchestra   runtime       once two holons are alive
+┌─────────────────────────────────────────────────────────────┐
+│                      AGENT RUNTIME                          │
+└──────────────────────────────┬──────────────────────────────┘
+                               ▼
+┌─────────────────────────────────────────────────────────────┐
+│  Phase 3: Verification & Metacognition (RFC Meta)          │
+│  - Execution attestation, audit trails & hallucination checks│
+└──────────────────────────────┬──────────────────────────────┘
+                               ▼
+┌─────────────────────────────────────────────────────────────┐
+│  Phase 2: Context & Episodic Grounding (RFC Cardinal)        │
+│  - Bitemporal state, token budgeting & working-memory graphs│
+└──────────────────────────────┬──────────────────────────────┘
+                               ▼
+┌─────────────────────────────────────────────────────────────┐
+│  Phase 1: Persistent Memory Substrate (VantaDB - Active)    │
+│  - Embedded Rust core, HNSW + BM25, ACID local persistence  │
+└─────────────────────────────────────────────────────────────┘
 ```
 
-No dates. The order comes out of the diagnosis, not out of a calendar. Full detail in the
-[roadmap](https://github.com/SyntropyOS/.github/blob/main/ROADMAP.md).
+1. **Substrate (Active):** High-throughput, low-footprint persistent memory via **VantaDB**.
+2. **Context Grounding (RFC Cardinal):** Bitemporal working memory tracking what an agent knew, when it learned it, and provenance sources.
+3. **Auditability & Trust (RFC Meta):** Cryptographic attestation and immutable audit logging for tool executions.
 
 ---
 
-## Principles
+## Engineering Principles
 
-1. **Infrastructure, Not Products**: We build foundations, not applications.
-2. **Pragmatism over Purity**: Local-first when it makes sense, cloud when needed.
-3. **Strategic Openness**: Open source with commercial licenses for sustainability.
-4. **Coherence over Complexity**: Simple APIs, predictable behavior.
-5. **Evolution, Not Revolution**: Compatibility, gradual deprecation, documented migrations.
-6. **Radical Transparency**: Real status, documented decisions, visible roadmap.
+1. **Infrastructure, Not Consumer Apps:** We build the foundational layers others deploy upon.
+2. **Local-First & Sovereign:** Minimize external cloud lock-in; optimize for local execution and on-premise governance.
+3. **Deterministic State over Probabilistic Guarantees:** Isolate statistical model inference from strict data schemas and transactional storage.
+4. **Radical Transparency:** Clear metrics, reproducible benchmarks, and documented failure modes.
 
-📖 **Full manifesto**: [MANIFESTO.md](https://github.com/SyntropyOS/.github/blob/main/MANIFESTO.md)
+📖 **Full Manifesto**: [MANIFESTO.md](https://github.com/NegentropyOS/.github/blob/main/MANIFESTO.md)
 
 ---
 
-## Contribute
+## Community & Contributing
 
-- **🐛 Report bugs**: Issues on GitHub.
-- **💬 Community**: [Discord](https://discord.gg/g8nqB3NtXt)
-- **📧 Contact**: [syntropyos.ia@gmail.com](mailto:syntropyos.ia@gmail.com)
-- **📖 Contribute**: See [CONTRIBUTING.md](https://github.com/SyntropyOS/.github/blob/main/CONTRIBUTING.md)
+- **🐛 Issue Tracking**: Submit bugs and benchmarks in relevant repositories.
+- **💬 Community**: Join our discussions on [Discord](https://discord.gg/g8nqB3NtXt).
+- **📧 Contact**: [NegentropyOS.ia@gmail.com](mailto:NegentropyOS.ia@gmail.com)
+- **📖 Contribution Guide**: See [CONTRIBUTING.md](https://github.com/NegentropyOS/.github/blob/main/CONTRIBUTING.md)
 
 ---
 
 ## License
 
-Code under Apache 2.0 (personal and commercial use allowed).
+Code is distributed under the [Apache 2.0 License](https://github.com/NegentropyOS/.github/blob/main/LICENSE).
 
-📖 **Details**: [LICENSE](https://github.com/SyntropyOS/.github/blob/main/LICENSE)
-
----
-
-**SyntropyOS** — Order out of chaos.
+**NegentropyOS** — Order out of chaos.

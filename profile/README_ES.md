@@ -1,127 +1,110 @@
-<a href="https://discord.gg/g8nqB3NtXt"><img align="right" src="https://img.shields.io/badge/Syntropy-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="SYNTROPY on Discord"></a>
+﻿<a href="https://discord.gg/g8nqB3NtXt"><img align="right" src="https://img.shields.io/badge/NEGENTROPY-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="NEGENTROPY on Discord"></a>
 <a href="https://opensource.org/licenses/Apache-2.0"><img align="right" src="https://img.shields.io/badge/Apache_2.0-181717?style=for-the-badge&logoColor=white" alt="Apache 2.0"></a>
 <div align="left"><a href="./README.md">English</a> | Español</div>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="org-syntropy.gif">
-  <img src="org-syntropy-light.gif" alt="Logotipo de Syntropy animándose hasta su posición" width="960">
+  <source media="(prefers-color-scheme: dark)" srcset="org-NEGENTROPY.gif">
+  <img src="org-NEGENTROPY-light.gif" alt="Logotipo de NEGENTROPY animándose hasta su posición" width="960">
 </picture>
 
 <p align="center"><strong>Orden desde el caos para la era de los agentes de IA.</strong></p>
 
-<p align="center"><em>Infraestructura que convierte el caos operativo de una empresa en un sistema en el que se puede confiar.</em></p>
+<p align="center"><em>Infraestructura determinista y memoria persistente para sistemas autónomos en los que se puede confiar.</em></p>
 
 ---
 
-## Qué es SyntropyOS
+## Qué es NegentropyOS
 
-SyntropyOS construye **infraestructura para agentes de IA**.
+NegentropyOS construye **infraestructura verificable y determinista para agentes de IA**.
 
-Los modelos de lenguaje grandes tienen inteligencia cruda pero ninguna estructura.
-SyntropyOS crea las capas de organización que convierten esa inteligencia en sistemas
-coherentes, predecibles y útiles.
+Los modelos de lenguaje grandes aportan inteligencia estadística cruda, pero los entornos operativos corporativos demandan estados predecibles, memoria reproducible y soberanía estricta de datos. NegentropyOS provee la capa de ingeniería que transforma la inferencia no determinista en ejecuciones confiables y auditables.
 
-Queremos ser como POSIX para la era de los agentes de IA: no hacemos aplicaciones, hacemos
-los cimientos sobre los que otros construyen aplicaciones. Aquí no hay nada construido
-todavía salvo el sustrato, y preferimos decirlo antes que insinuarlo.
-
-El problema no es la inteligencia artificial. Es que ningún sistema sobrevive a la
-realidad operativa: se corta la luz, se va la persona que lo configuró, el documento
-fuente es un PDF de 2019 y nadie sabe de dónde salieron los datos. Entonces la pregunta
-no es *qué sabe el sistema* sino **si puedes confiar en él**. Construimos infraestructura
-**verificable y soberana**, no solo capaz.
+Nuestra tesis técnica es directa: **la infraestructura debe sobrevivir a la realidad operativa**. Separamos la salida probabilística de los modelos del almacenamiento transaccional con garantías ACID y sustratos de ejecución verificables.
 
 ---
 
-## Dónde vive cada cosa
+## Sustrato Activo: VantaDB
 
-| Repositorio | Visibilidad | Qué contiene |
+Nuestro componente central en producción activa es **VantaDB** — un motor embebido de recuperación híbrida y memoria persistente escrito en **Rust**.
+
+| Propiedad | Detalle |
+|---|---|
+| **Repositorio** | [`ness-e/Vantadb`](https://github.com/ness-e/Vantadb) |
+| **Versión Actual** | `v0.7.0` (Librería en producción en PyPI y crates.io) |
+| **Arquitectura del Motor** | Embebido, local-first, zero-copy, acelerado por SIMD |
+| **Mecánica de Recuperación** | Vectorial denso (HNSW) + Léxico texto completo (BM25) con fusión RRF (*Reciprocal Rank Fusion*) |
+| **Persistencia y Garantías** | Transaccionalidad ACID, WAL (*Write-Ahead Logging*), aislamiento MVCC |
+| **Ecosistema y Conectores** | Bindings en Python (`vantadb-py`), LangChain (`vantadb-langchain`), Mem0 (`vantadb-mem0`) |
+
+VantaDB provee a los agentes autónomos memoria episódica y semántica de latencia submilisegundo sin la sobrecarga operativa ni la latencia de red de clústeres externos.
+
+---
+
+## Estructura de Repositorios
+
+Mantenemos una arquitectura limpia y sin sobrecarga de repositorios vacíos:
+
+| Repositorio | Ámbito | Descripción |
 |---|---|---|
-| [`syntropy`](https://github.com/SyntropyOS/syntropy) | público | **Los nueve holones**, un directorio cada uno. El sustrato |
-| [`ness-e/Vantadb`](https://github.com/ness-e/Vantadb) | público | El sustrato de memoria. Librería publicada, v0.7.0 en producción |
-| [`.github`](https://github.com/SyntropyOS/.github) | público | [Manifiesto](https://github.com/SyntropyOS/.github/blob/main/MANIFESTO_ES.md) · [Roadmap](https://github.com/SyntropyOS/.github/blob/main/ROADMAP_ES.md) · [Contribuir](https://github.com/SyntropyOS/.github/blob/main/CONTRIBUTING_ES.md) · Gobernanza |
-| `strategy` | **privado** | Definición de negocio, evidencia de mercado, precios, análisis competitivo |
-
-Tres repositorios activos. Uno es privado, y es deliberado: mezclar *lo que creemos* con
-*lo que sabemos del mercado* degrada ambas cosas.
+| [`VantaDB`](https://github.com/ness-e/Vantadb) | **Sustrato Central** | Motor embebido de memoria y recuperación híbrida en Rust. |
+| [`NEGENTROPY`](https://github.com/NegentropyOS/NEGENTROPY) | **Especificaciones y RFCs** | Diseños arquitectónicos, especificaciones de investigación y runtime de agentes. |
+| [`.github`](https://github.com/NegentropyOS/.github) | **Organización y Gobernanza** | Perfil institucional, manifiesto técnico y estándares de contribución. |
 
 ---
 
-## Holones
+## Hoja de Ruta e Investigación Técnica
 
-Cada capacidad es un **holón**: autónomo pero conectado — un todo en su ámbito y parte
-del ecosistema Syntropy al mismo tiempo.
-
-Cada holón existe porque resuelve un **caos** específico que se diagnostica en una
-organización real. Un holón sin caos asociado no se construye.
-
-| Holón | Función | El caos que resuelve | Estado |
-|---|---|---|---|
-| **VantaDB** | Memoria | Sustrato de todos: persistencia ACID y recuperación híbrida, local y soberana | [v0.7.0](https://github.com/ness-e/Vantadb) ✅ |
-| [**Cardinal**](https://github.com/SyntropyOS/syntropy/tree/main/holons/cardinal) | Orientación | **Contexto**: qué sabemos, cuándo lo supimos y de quién | En construcción · 1º |
-| [**Iris**](https://github.com/SyntropyOS/syntropy/tree/main/holons/iris) | Visión | **Percepción**: lo que es imagen o papel y nadie puede consultar | En construcción · 2º |
-| [**Meta**](https://github.com/SyntropyOS/syntropy/tree/main/holons/meta) | Metacognición | **Confianza**: prueba de que la IA dijo la verdad | En construcción · 3º |
-| [**Execute**](https://github.com/SyntropyOS/syntropy/tree/main/holons/execute) | Ejecución | **Ejecución**: la automatización se rompe y nadie la repara | Definido |
-| [**Sage**](https://github.com/SyntropyOS/syntropy/tree/main/holons/sage) | Adaptación | **Adaptación**: ni el sistema ni las personas se adaptan | Definido |
-| [**Plan**](https://github.com/SyntropyOS/syntropy/tree/main/holons/plan) | Planificación | **Descomposición**: nadie descompone el trabajo | Definido |
-| [**Orchestra**](https://github.com/SyntropyOS/syntropy/tree/main/holons/orchestra) | Coordinación | **Runtime**: sin él, los holones no saben cooperar | Definido · cuando existan 2+ |
-| [**Reverb**](https://github.com/SyntropyOS/syntropy/tree/main/holons/reverb) · [**Reason**](https://github.com/SyntropyOS/syntropy/tree/main/holons/reason) | Audio · Razonamiento | Fuera del alcance inicial | Aplazado |
-
-**Definido** significa que el diseño y los criterios de activación están documentados; no
-significa que esté en producción. Hoy solo el sustrato (VantaDB) está en producción.
-
-**Cardinal** va primero porque los demás dependen de él: sin contexto verificable no hay
-nada que percibir ni que verificar. **Meta** subió de novena a tercera porque es el
-diferenciador — la competencia vende capacidad, esto vende verificabilidad.
-
----
-
-## Orden de construcción
+En lugar de dispersar el esfuerzo en repositorios vacíos, nuestras capacidades futuras se gestionan como especificaciones rigurosas dentro de [`NegentropyOS/NEGENTROPY`](https://github.com/NegentropyOS/NEGENTROPY):
 
 ```
-VantaDB  (sustrato, en producción)
-   └─► 1. Cardinal   contexto     ┐
-   └─► 2. Iris       percepción    ├─ sin Cardinal no hay nada que verificar
-   └─► 3. Meta       confianza     ┘
-   └─► 4. Execute    ejecución     requiere confianza previa
-   └─► 5. Sage       adaptación    requiere contexto confiable e Iris
-   └─► 6. Plan       descomposición requiere contra qué verificar los pasos
-          Orchestra   runtime      cuando existan dos holones vivos
+┌─────────────────────────────────────────────────────────────┐
+│                    RUNTIME DEL AGENTE                       │
+└──────────────────────────────┬──────────────────────────────┘
+                               ▼
+┌─────────────────────────────────────────────────────────────┐
+│  Fase 3: Verificación y Metacognición (RFC Meta)            │
+│  - Atestación de ejecución, auditoría y control de alucinación│
+└──────────────────────────────┬──────────────────────────────┘
+                               ▼
+┌─────────────────────────────────────────────────────────────┐
+│  Fase 2: Contexto y Anclaje Episódico (RFC Cardinal)        │
+│  - Estado bitemporal, presupuesto de tokens y grafos de memoria│
+└──────────────────────────────┬──────────────────────────────┘
+                               ▼
+┌─────────────────────────────────────────────────────────────┐
+│  Fase 1: Sustrato de Memoria Persistente (VantaDB - Activo) │
+│  - Núcleo en Rust, HNSW + BM25, persistencia local ACID     │
+└─────────────────────────────┘
 ```
 
-No hay fechas. El orden sale del diagnóstico, no de un calendario. Detalle completo en el
-[roadmap](https://github.com/SyntropyOS/.github/blob/main/ROADMAP_ES.md).
+1. **Sustrato (Activo):** Memoria persistente de alto rendimiento y bajo consumo mediante **VantaDB**.
+2. **Anclaje de Contexto (RFC Cardinal):** Memoria de trabajo bitemporal que registra qué supo el agente, cuándo lo supo y el linaje de las fuentes.
+3. **Auditabilidad y Confianza (RFC Meta):** Atestación criptográfica y registro inmutable de auditoría para ejecuciones de herramientas.
 
 ---
 
-## Principios
+## Principios de Ingeniería
 
-1. **Infraestructura, no productos**: Construimos cimientos, no aplicaciones.
-2. **Pragmatismo sobre pureza**: Local primero cuando conviene, nube cuando hace falta.
-3. **Apertura estratégica**: Código abierto con licencias comerciales para la sostenibilidad.
-4. **Coherencia sobre complejidad**: APIs simples, comportamiento predecible.
-5. **Evolución, no revolución**: Compatibilidad, deprecación gradual, migraciones documentadas.
-6. **Transparencia radical**: Estado real, decisiones documentadas, roadmap visible.
+1. **Infraestructura, no aplicaciones finales:** Construimos los cimientos sobre los cuales operan los agentes.
+2. **Local-First y Soberano:** Minimizamos el acoplamiento a servicios en la nube externos; priorizamos ejecución local y gobernanza en premisa.
+3. **Estado Determinista sobre Garantías Estadísticas:** Aislar el razonamiento probabilístico de esquemas rígidos y almacenamiento transaccional.
+4. **Transparencia Radical:** Métricas reales, benchmarks reproducibles y análisis explícito de modos de falla.
 
-📖 **Manifiesto completo**: [MANIFESTO_ES.md](https://github.com/SyntropyOS/.github/blob/main/MANIFESTO_ES.md)
+📖 **Manifiesto Completo**: [MANIFESTO_ES.md](https://github.com/NegentropyOS/.github/blob/main/MANIFESTO_ES.md)
 
 ---
 
-## Participar
+## Comunidad y Contribución
 
-- **🐛 Reportar errores**: Issues en GitHub.
-- **💬 Comunidad**: [Discord](https://discord.gg/g8nqB3NtXt)
-- **📧 Contacto**: [syntropyos.ia@gmail.com](mailto:syntropyos.ia@gmail.com)
-- **📖 Contribuir**: Ver [CONTRIBUTING_ES.md](https://github.com/SyntropyOS/.github/blob/main/CONTRIBUTING_ES.md)
+- **🐛 Reporte de Errores**: Issues técnicos y benchmarks en los repositorios correspondientes.
+- **💬 Comunidad**: Conversaciones y desarrollo en [Discord](https://discord.gg/g8nqB3NtXt).
+- **📧 Contacto**: [NegentropyOS.ia@gmail.com](mailto:NegentropyOS.ia@gmail.com)
+- **📖 Guía de Contribución**: Ver [CONTRIBUTING_ES.md](https://github.com/NegentropyOS/.github/blob/main/CONTRIBUTING_ES.md)
 
 ---
 
 ## Licencia
 
-Código bajo Apache 2.0 (uso personal y comercial permitido).
+Código distribuido bajo [Licencia Apache 2.0](https://github.com/NegentropyOS/.github/blob/main/LICENSE).
 
-📖 **Detalles**: [LICENSE](https://github.com/SyntropyOS/.github/blob/main/LICENSE)
-
----
-
-**SyntropyOS** — Orden desde el caos.
+**NegentropyOS** — Orden desde el caos.

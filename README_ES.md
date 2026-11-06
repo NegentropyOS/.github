@@ -1,4 +1,4 @@
-# SyntropyOS
+﻿# NegentropyOS
 
 <div align="right"><a href="./README.md">English</a> | Español</div>
 
@@ -6,12 +6,12 @@
 
 <p align="center"><em>Infraestructura que convierte el caos operativo de una empresa en un sistema en el que se puede confiar.</em></p>
 
-Este es el repositorio `.github` de **SyntropyOS**. Contiene dos cosas distintas, y
+Este es el repositorio `.github` de **NegentropyOS**. Contiene dos cosas distintas, y
 mantenerlas separadas es el motivo de este repositorio:
 
 | | |
 |---|---|
-| [`profile/`](./profile/) | El **perfil de la organización** — esto es lo que se muestra en [github.com/SyntropyOS](https://github.com/SyntropyOS) |
+| [`profile/`](./profile/) | El **perfil de la organización** — esto es lo que se muestra en [github.com/NegentropyOS](https://github.com/NegentropyOS) |
 | La raíz del repositorio | **Documentos de gobernanza y comunidad** — las reglas que aplican a todos los repositorios de la organización |
 
 GitHub renderiza `profile/README.md`, no el `README.md` de la raíz. Por eso son dos
@@ -34,7 +34,7 @@ Esta es la página donde llega quien visita la organización.
 
 Son archivos de salud comunitaria de GitHub. Al vivir aquí, aplican a **todos los
 repositorios de la organización** que no los sobrescriban — incluido
-[`syntropy`](https://github.com/SyntropyOS/syntropy).
+[`NEGENTROPY`](https://github.com/NegentropyOS/NEGENTROPY).
 
 | Documento | English | Español |
 |---|---|---|
@@ -67,13 +67,13 @@ secundario en importancia.
 
 | Repositorio | Visibilidad | Qué es |
 |---|---|---|
-| [`.github`](https://github.com/SyntropyOS/.github) | público | Este. Perfil de la organización y gobernanza |
-| [`syntropy`](https://github.com/SyntropyOS/syntropy) | público | **Los nueve holones**, un directorio cada uno. El sustrato |
+| [`.github`](https://github.com/NegentropyOS/.github) | público | Este. Perfil de la organización y gobernanza |
+| [`NEGENTROPY`](https://github.com/NegentropyOS/NEGENTROPY) | público | **Los nueve holones**, un directorio cada uno. El sustrato |
 | [`ness-e/Vantadb`](https://github.com/ness-e/Vantadb) | público | El sustrato de memoria. Librería publicada, repo propio, v0.7.0 en producción |
 | `strategy` | **privado** | Definición maestra, evidencia de mercado, modelo de negocio, análisis competitivo |
 
-Nueve repositorios `syntropy-<holon>` fueron **eliminados** el 29 de septiembre de 2026
-tras integrar su contenido en el monorepo `syntropy`. Su historial vive dentro del monorepo.
+Nueve repositorios `NEGENTROPY-<holon>` fueron **eliminados** el 29 de septiembre de 2026
+tras integrar su contenido en el monorepo `NEGENTROPY`. Su historial vive dentro del monorepo.
 
 El repositorio privado `strategy` contiene lo que el público no debe: precios, análisis
 competitivo, registro de riesgos y la evidencia de mercado con sus fuentes. Mezclar «esto
@@ -83,7 +83,7 @@ es lo que creemos» con «esto es lo que sabemos del mercado» degrada ambas cos
 
 ## Contacto
 
-- 📧 [syntropyos.ia@gmail.com](mailto:syntropyos.ia@gmail.com)
+- 📧 [NegentropyOS.ia@gmail.com](mailto:NegentropyOS.ia@gmail.com)
 - 💬 [Discord](https://discord.gg/g8nqB3NtXt)
 
 ---
@@ -94,4 +94,4 @@ Apache 2.0 — ver [LICENSE](./LICENSE) y [NOTICE](./NOTICE).
 
 ---
 
-**SyntropyOS** — Orden desde el caos.
+**NegentropyOS** — Orden desde el caos.

@@ -1,6 +1,6 @@
-[Español](./MANIFESTO_ES.md) | English
+﻿[Español](./MANIFESTO_ES.md) | English
 
-# The Syntropy Manifesto
+# The NEGENTROPY Manifesto
 
 > "Order out of chaos for the age of AI agents."
 
@@ -95,11 +95,11 @@ If you build with LLMs and need order over raw intelligence:
 - **Propose**: Suggest what's missing.
 - **License**: Commercial licensing for enterprise use.
 
-**Contact**: [syntropyos.ia@gmail.com](mailto:syntropyos.ia@gmail.com) | [Discord](https://discord.gg/g8nqB3NtXt)
+**Contact**: [NegentropyOS.ia@gmail.com](mailto:NegentropyOS.ia@gmail.com) | [Discord](https://discord.gg/g8nqB3NtXt)
 
 Let's build infrastructure for the age of agents.
 
 ---
 
-**SyntropyOS** — Order out of chaos.
+**NegentropyOS** — Order out of chaos.
 
